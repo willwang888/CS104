@@ -6,7 +6,8 @@
 
 This is the GUI version of the popular word game, Scrabble, written with Qt.
 The rules are very slightly modified, but most of the rules are
-still the same as the official rules.
+still the same as the official rules. I am still fixing the GUI to make it look
+nicer.
 
 To run, clone the repository, and type:
   1. qmake -project
