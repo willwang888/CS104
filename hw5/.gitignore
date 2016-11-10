@@ -1,0 +1,7 @@
+*moc_*
+*.o
+*.pro
+board.txt
+dictionary.txt
+config.txt
+bag.txt

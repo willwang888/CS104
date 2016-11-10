@@ -1,0 +1,25 @@
+Problem 2:
+	a) The end contents of stack 1 are (from top to bottom): 6, 5, 4, 3. Stack 2 
+		will be empty. 1 and 2 get pushed onto stack 1, and dequeue makes them 
+		both push onto stack 2, reversing them. Then, 1 is popped off. 3 and 4 are
+		pushed onto stack 1, then 2 is popped from stack 2. 5 and 6 are pushed onto 
+		stack 1, finishing the loop.
+
+	b) The worst case run-time of enqueue(x) is O(1), because it pushes to the top
+		of the stack. The worst-case run time of dequeue(x) is O(n), because if 
+		stack 2 is empty, it takes n operations to pop all the contents of stack 1
+		and push them onto stack 2.
+
+	c) The amortized run-time of enqueue(x) is O(1), because it always takes O(1)
+		time to run. The amortized run-time of dequeue(x) is O(1) as well, because
+		very occasionally, it takes O(n) of time to run. Therefore, the total 
+		amortized run-time of the program is also O(1) because the amount of O(1)
+		run-times significantly overtakes the very rare number of O(n) run-times.
+
+	d) The worst case run time of enqueue is still O(1), since it will still
+		take exactly one operation to push into the stack. The worst case
+		run time of dequeue is now n^2, because of the rare instance where
+		the stack 2 is empty and stack 1 has to pop into stack 2. The
+		amortized run time of dequeue is just n, because:
+		(n*O(1) for enqueue + O(n^2) for dequeue) / (n + 1) simplifies to 
+		just n.

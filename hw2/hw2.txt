@@ -1,0 +1,79 @@
+Problem 1:
+	a) README.md is not changed at all.
+	b) The README.md file is modified and fun_problem.txt is 
+		untracked, because it hasn't been added yet.
+	c) At this point, both README.md and fun_problem.txt are staged for commit
+	d) Both README.md and fun_problem.txt are modified again
+	e) README.md is restaged for commit, and fun_problem.txt is put back into
+		its condition during the previous commit.
+	f) README.md is modified again, and is unstaged. It needs to be added to 
+		git again.
+
+Problem 3:
+	a) The runtime is nlog(n) base 2, because the outside for loop runs in 
+		worst-case n time, and the inside for loop runs by doubling the input
+		everytime, or worst-case in log(n) time. Multiplying them both yields
+		nlog(n).
+
+	b) The runtime is n^2. For the for second for loop nested inside the 
+		overarching one, after the if statement, we can assume that the operations
+		after it take theta of 1 time. Also, operations inside the third nested for 
+		loop inside the if statement take theta of 1 time as well. The third
+		nested for loop tkaes (n-j) times to run, since it goes from j to n.
+		The if statement is a litle more tricky, since it has two variables and the
+		mod operator, but after writing out the values of each j and i, we can
+		conclude that with the if statement runs (n / i) times. Since it is inside
+		a for loop that runs n times, we can represent that relationship with 
+		the summation from j = 0 to n/i of n - j, plus theta of n (the summation 
+		from 0 to n of theta of 1. Simplifying gives us n ^2 times the summation 
+		from z = 0 to log base 2 of n, of (1/2) ^z, because that is the only way
+		to represent the constant doubling of i in the for loop. Simplifying the
+		summation yields a run time of n ^ 2.
+
+	c) The runtime is n^2, because the first for loop has a runtime of n - 1. Within 
+		the first for loop, there is a bit shift left operator, that multiplies the 
+		curr->data value by 2^i. The while loop runs in n - 1 operations, since the 
+		that's the number of elements are in the list created by the outside for loop.
+		The inside for loop takes j number of operations to run, since the inside of 
+		the for loopdivides curr->data by 2 every iteration, which decreases the value 
+		of curr->data. It takes j iterations to make i equal the value of j->data. 
+		Therefore, the total runtime can be described as a summation from j = 0 to
+		n - 1, of j. Simplifying the summation results in n^2.
+
+	d) The runtime is theta of n because the outside for loop runs in n operations.
+		The inside loop runs with a few times of theta size operations, so they 
+		end up being theta of 1 as more loops run. So the inside for loop multiplies
+		the total run time by a constant. As the program goes on, the inside for 
+		loop will run at such an infrequent time that its runtime can be regarded
+		as theta of 1. 
+
+Problem 4:
+	a) I would use a map, because the relationship between voting statistics and
+		a particular zip code is a 1 to 1 ratio. Therefore, in order to have all  
+		statistics from each zip code returned, a map would have to be implemented.
+	b) I would use a set, because order does not matter in the number of students 
+		who solved the chocolate problem in 104. The only thing that matter is 
+		the number of students that solved it, and who solved it.
+	c) I would use a list, because order matters in the way that the pokemon are
+		stored, in this case, the sequential order of their pokedex index. However,
+		you could also use a map, because while order matters in the way that the
+		pokemon are stored, the main requirement is to store them based on their 
+		respective numbers, and that can be accomplished with a map.
+	d) I would use a map, that maps to a set, or a list, because each movie has
+		more than 1 review. Therefore, the data structure to store the reviews in
+		would have to hold multiple reviews, and order does not matter. Therefore,
+		a map of movies to each of their respective sets of reviews would be ideal.
+		However, a list can also work even though order doesnt matter.
+
+Problem 5:
+
+	The reverse of whatever linked list is passed in is returned at the end of the 
+	program (5, 4, 3, 2, 1). funcA will traverse the linked list and assign the out 
+	value to the data of the next node, until it gets to the second to last node, 
+	which will assign the value of out to the data of the last node. Then, funcB 
+	will be called and will recurse to the end of the list, and then reverse the 
+	last pointer to point to the previous node. Then, funcA will delete the pointer 
+	to the next node that the one that was just allocated replaced. Then, funcB 
+	recurses and reverses the previous pointer as well, then funcA deletes the 
+	replaced pointer. funcA and funcB keep doing that until the array is totally 
+	reversed. 

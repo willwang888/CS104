@@ -1,0 +1,4 @@
+NUMBER: 7
+BOARD: board_files/board3.txt
+TILES: bag_files/bag3.txt
+DICTIONARY: dictionary_files/dictionary3.txt

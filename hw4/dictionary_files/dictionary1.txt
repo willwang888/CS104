@@ -1,0 +1,16 @@
+these
+are
+the
+only
+words
+in
+the
+dictionary
+when
+we
+want
+to
+test
+a
+small
+program

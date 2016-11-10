@@ -1,0 +1,143 @@
+Problem 1:
+
+	Part a:
+
+		1. Yes
+		2. No
+		3. No
+		4. Yes
+		5. No
+		6. No
+		7. No
+		8. Yes
+
+	Part b:
+
+		1. No
+		2. Yes
+		3. Yes
+		4. Yes
+		5. Yes
+		6. No
+
+	Part c:
+		1. False
+		2. True
+		3. False 
+		4. False
+
+	Part d:
+		1. False
+		2. True
+		3. False
+		4. True
+
+Problem 2:
+
+	Part a:
+		1. Yes
+		2. No
+		3. Yes
+		4. No
+		5. No
+
+	Part b:
+		1. git add hw1q2b.cpp
+		2. git log -3, and git log -p -3 will show the differences 
+between each of the commits
+
+	Part c:
+
+	"git commit" is generally paired with a commit message. If just "git 
+commit" is run, then git will stop and ask for a message to be placed after a 
+"-". Another window may pop up asking the user to put a commit message under 
+the "#" before commiting.
+
+Problem 4:
+	The end contents of the array after the recursion is [5, 1, 1, 1, 1]. 
+funcA is called 4 times in the if statement in funcA,
+	funcA(int* in, 4), funcA(int* in, 3), funcA(int* in, 2), funcA(int* in, 
+1). When then funcA reaches funcA(int* in, 0), 1, the current in[0], is 
+returned back to funcA(int* in, 1). funcB is called with int n being one less 
+than whatever n was in 
+	funcA. In this case, int n is 0. Then, funcB swaps in[0] with int[n], 
+so in the first loop, 1 would be swapped with 1, so nothing would change. funcB 
+returns temp, however, and after going through the loops, temp can be found to 
+always equal 1. Therefore, in[0] will always be equal to 1 and when funcB is 
+called, every index of "in" will be swapped/changed with 1, changing every 
+index of the array to 1. However, the last index is not changed to 1 at all, 
+because when the recursion gets to the last loop, there is nothing for funcB to 
+return to, so in[0] stays the same (1), but the last element (5) is swapped 
+with in[0] and no computations come after it. Therefore, the ending array is 
+[5, 1, 1, 1, 1].
+Problem 1:
+
+	Part a:
+
+		1. Yes
+		2. No
+		3. No
+		4. Yes
+		5. No
+		6. No
+		7. No
+		8. Yes
+
+	Part b:
+
+		1. No
+		2. Yes
+		3. Yes
+		4. Yes
+		5. Yes
+		6. No
+
+	Part c:
+		1. False
+		2. True
+		3. False 
+		4. False
+
+	Part d:
+		1. False
+		2. True
+		3. False
+		4. True
+
+Problem 2:
+
+	Part a:
+		1. Yes
+		2. No
+		3. Yes
+		4. No
+		5. No
+
+	Part b:
+		1. git add hw1q2b.cpp
+		2. git log -3, and git log -p -3 will show the differences 
+between each of the commits
+
+	Part c:
+
+	"git commit" is generally paired with a commit message. If just "git 
+commit" is run, then git will stop and ask for a message to be placed after a 
+"-". Another window may pop up asking the user to put a commit message under 
+the "#" before commiting.
+
+Problem 4:
+	The end contents of the array after the recursion is [5, 1, 1, 1, 1]. 
+funcA is called 4 times in the if statement in funcA, funcA(int* in, 4), 
+funcA(int* in, 3), funcA(int* in, 2), funcA(int* in, 1). When then funcA 
+reaches funcA(int* in, 0), 1, the current in[0], is returned back to 
+funcA(int* in, 1). funcB is called with int n being one less than whatever 
+n was in funcA. In this case, int n is 0. Then, funcB swaps in[0] with int[n], 
+so in the first loop, 1 would be swapped with 1, so nothing would change. funcB 
+returns temp, however, and after going through the loops, temp can be found to 
+always equal 1. Therefore, in[0] will always be equal to 1 and when funcB is 
+called, every index of "in" will be swapped/changed with 1, changing every 
+index of the array to 1. However, the last index is not changed to 1 at all, 
+because when the recursion gets to the last loop, there is nothing for funcB to 
+return to, so in[0] stays the same (1), but the last element (5) is swapped 
+with in[0] and no computations come after it. Therefore, the ending array is 
+[5, 1, 1, 1, 1].
