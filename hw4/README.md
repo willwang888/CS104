@@ -1,7 +1,6 @@
 # CS104 Homework 4
 
 - **Name**: William Wang
-- **USC ID**: 7825618977
 - **Email**: wang975@usc.edu
 
 This is a C++ version of the popular word game, Scrabble, that runs
