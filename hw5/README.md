@@ -1,7 +1,6 @@
 # CS104 Homework 5
 
 - **Name**: William Wang
-- **USC ID**: 7825618977
 - **Email**: wang975@usc.edu
 
 This is the GUI version of the popular word game, Scrabble, written with Qt.
