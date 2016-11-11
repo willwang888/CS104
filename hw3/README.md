@@ -1,7 +1,6 @@
 # CS104 Homework 3
 
 - **Name**: William Wang
-- **USC ID**: 7825618977
 - **Email**: wang975@usc.edu
 
 To make llisttest, type:
